@@ -263,7 +263,7 @@
       <!-- SUBSCRIPTION -->
       <div class="sub-card">
         <div class="sub-card-head">🎟 Абонемент</div>
-        <div class="sub-row">Оплаченных уроков: <span>3</span></div>
+        <div class="sub-row">Оплаченных уроков: <span>1</span></div>
       </div>
 
       <!-- SCHEDULE -->
@@ -294,9 +294,75 @@
         <div class="card-head">📖 Уроки и материалы</div>
         <div class="lesson-tabs">
           <div class="lesson-tab" onclick="switchLessons('september', this)">Сентябрь</div>
-          <div class="lesson-tab active" onclick="switchLessons('october', this)">Октябрь</div>
+          <div class="lesson-tab" onclick="switchLessons('october', this)">Октябрь</div>
+          <div class="lesson-tab active" onclick="switchLessons('november', this)">Ноябрь</div>
         </div>
-        <div class="lesson-month active" id="lessons-october">
+        <div class="lesson-month active" id="lessons-november">
+          <div class="lesson-item">
+            <div class="lesson-item-head" onclick="toggleLesson(this)">
+              <div class="lesson-title">Don’t fall for it: online scams</div>
+              <div class="lesson-date-badge">6 ноября</div>
+              <div class="chevron">&#9660;</div>
+            </div>
+            <div class="lesson-body">
+              <div class="lesson-section">
+                <div class="lesson-section-label">Что делали на уроке</div>
+                <ul class="topic-list">
+                  <li>Warm-up: история о работе и документах для HR; новые слова: employment record, position, meticulous</li>
+                  <li>Поговорили о мошенниках: странные звонки, сообщения «от Госуслуг», фейковые вакансии</li>
+                  <li>Перевод с русского с повторением всех правил: must / can’t be, be used to / get used to + -ing, until + Present, Past Perfect, Passive</li>
+                  <li>Разобрали ошибки: answer a call (без предлога), ask sb for sth, message from a recruiter, call the bank</li>
+                  <li>Spot the scam: решали, реальное сообщение или мошенники (It must be a scam / It might be real)</li>
+                  <li>Speaking: говорили 1 минуту на тему, обсудили, кто чаще попадается на мошенников</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="lesson-item">
+            <div class="lesson-item-head" onclick="toggleLesson(this)">
+              <div class="lesson-title">If it sounds too good to be true: If 1 vs If 2</div>
+              <div class="lesson-date-badge">7 ноября</div>
+              <div class="chevron">&#9660;</div>
+            </div>
+            <div class="lesson-body">
+              <div class="lesson-section">
+                <div class="lesson-section-label">Что делали на уроке</div>
+                <ul class="topic-list">
+                  <li>Повторили слова про мошенников: объясняли их по-английски без запретных слов (hang up, report, transfer, hesitate, too good to be true)</li>
+                  <li>First vs Second conditional: реальная ситуация (If + Present, will) и «если бы» (If + Past, would), If I were you</li>
+                  <li>unless / until / as soon as + Present Simple</li>
+                  <li>Закончили предложения своими словами, перевели переписку в чате</li>
+                  <li>Role-play: Anti-scam hotline — помогали «пострадавшим» от мошенников</li>
+                </ul>
+              </div>
+              <div class="hw-block">
+                <div class="hw-block-title">&#9999;&#65039; Домашнее задание</div>
+                <div class="hw-item">
+                  <div class="hw-status todo">!</div>
+                  <div>
+                    <div class="hw-task">Сделать интерактивные задания</div>
+                    <a class="hw-link" href="https://alinaparam.github.io/alexeyhmw/" target="_blank">&#128214; Homework · Too Good to Be True</a>
+                  </div>
+                </div>
+                <div class="hw-item">
+                  <div class="hw-status todo">!</div>
+                  <div>
+                    <div class="hw-task">Сделать задание на доске</div>
+                    <a class="hw-link" href="https://app.holst.so/share/b/9e7cabe2-dd0f-4f80-a6f8-356c06885112" target="_blank">&#128214; Открыть доску</a>
+                  </div>
+                </div>
+                <div class="hw-item">
+                  <div class="hw-status todo">!</div>
+                  <div>
+                    <div class="hw-task">Выучить новые слова и повторить старые</div>
+                    <a class="hw-link" href="https://termin.world/share/96339ab3" target="_blank">&#128218; Открыть карточки</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lesson-month" id="lessons-october">
           <div class="lesson-item">
             <div class="lesson-item-head" onclick="toggleLesson(this)">
               <div class="lesson-title">Будущее время: will / be going to</div>
@@ -599,7 +665,7 @@
                   <div class="hw-status todo">!</div>
                   <div>
                     <div class="hw-task">Сделать интерактивные задания</div>
-                    <a class="hw-link" href="https://alinaparam.github.io/alexeyhmw/" target="_blank">&#128214; Homework · The Worst Party Ever</a>
+                    <a class="hw-link" href="https://alinaparam.github.io/alexeyhmw/7.html" target="_blank">&#128214; Homework · The Worst Party Ever</a>
                   </div>
                 </div>
                 <div class="hw-item">
@@ -823,7 +889,8 @@
         <div class="card-head">📊 Прогресс</div>
         <div class="month-tabs">
           <div class="month-tab" onclick="switchMonth('september', this)">Сентябрь</div>
-          <div class="month-tab active" onclick="switchMonth('october', this)">Октябрь</div>
+          <div class="month-tab" onclick="switchMonth('october', this)">Октябрь</div>
+          <div class="month-tab active" onclick="switchMonth('november', this)">Ноябрь</div>
         </div>
         <div class="month-stats" id="stats-september">
           <div class="stat-row">
@@ -831,10 +898,16 @@
             <div class="stat-box"><div class="sv">5/5</div><div class="sl">Домашек</div></div>
           </div>
         </div>
-        <div class="month-stats active" id="stats-october">
+        <div class="month-stats" id="stats-october">
           <div class="stat-row">
             <div class="stat-box"><div class="sv">9</div><div class="sl">Уроков</div></div>
-            <div class="stat-box"><div class="sv">5/6</div><div class="sl">Домашек</div></div>
+            <div class="stat-box"><div class="sv">6/6</div><div class="sl">Домашек</div></div>
+          </div>
+        </div>
+        <div class="month-stats active" id="stats-november">
+          <div class="stat-row">
+            <div class="stat-box"><div class="sv">2</div><div class="sl">Уроков</div></div>
+            <div class="stat-box"><div class="sv">0/1</div><div class="sl">Домашек</div></div>
           </div>
         </div>
       </div>
